@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent-id">
+        <p>hello word1</p>
+        <p class="test">hello word2</p>
+        <p >hello word3</p>
+        <p>hello word4</p>
+    </div>
+
+    <script>
+        var parentDOM = document.getElementById('parent-id');
+
+        var e = document.createElement('p');
+
+        e.innerHTML = 'otro hello world';
+
+        parentDOM.appendChild(e);
+    </script>
+</body>
+</html>

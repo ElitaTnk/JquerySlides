@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent-id">
+        <p>hello word1</p>
+        <p class="test">hello word2</p>
+        <p >hello word3</p>
+        <p>hello word4</p>
+    </div>
+    <!-- //libreria jquery, siempre primero -->
+    <script src="jquery-3.3.1.min.js"> </script>
+
+    <script>
+      $(document).ready(function(){
+        var parentDOM = $( '#parent-id' );
+
+        parentDOM.append('<p>otro hello world</p>');
+      });
+    </script>
+  </body>
+  </html>
